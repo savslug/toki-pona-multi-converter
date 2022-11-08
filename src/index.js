@@ -14,7 +14,7 @@ function App() {
   const [JapanText, setJapanText] = useState('')
   const [EnglishText, setEnglishText] = useState('')
 
-  const onChangePlainText = (plainText) => {
+  const onChangePlainText = plainText => {
     setPlainText(plainText)
     setSitelenText(translate(plainText, 'Plain', 'SP'))
     setEmojiText(translate(plainText, 'Plain', 'U6'))
@@ -22,7 +22,7 @@ function App() {
     setEnglishText(translate(plainText, 'Plain', 'Mean_EN'))
   }
 
-  const onChangeSitelenText = (SitelenText) => {
+  const onChangeSitelenText = SitelenText => {
     setSitelenText(SitelenText)
     setPlainText(translate(plainText, 'SP', 'Plain'))
     setEmojiText(translate(plainText, 'SP', 'U6'))
@@ -30,7 +30,7 @@ function App() {
     setEnglishText(translate(SitelenText, 'SP', 'Mean_EN'))
   }
 
-  const onChangeEmojiText = (EmojiText) => {
+  const onChangeEmojiText = EmojiText => {
     setEmojiText(EmojiText)
     setPlainText(translate(EmojiText, 'U6', 'Plain'))
     setSitelenText(translate(EmojiText, 'U6', 'SP'))
@@ -38,7 +38,7 @@ function App() {
     setEnglishText(translate(EmojiText, 'U6', 'Mean_EN'))
   }
 
-  const onChangeJapanText = (JapanText) => {
+  const onChangeJapanText = JapanText => {
     setJapanText(JapanText)
     setPlainText(translate(JapanText, 'Japanese', 'Plain'))
     setSitelenText(translate(JapanText, 'Japanese', 'SP'))
@@ -46,7 +46,7 @@ function App() {
     setEnglishText(translate(JapanText, 'Japanese', 'Mean_EN'))
   }
 
-  const onChangeEnglishText = (EnglishText) => {
+  const onChangeEnglishText = EnglishText => {
     setEnglishText(EnglishText)
     setPlainText(translate(EnglishText, 'Mean_EN', 'Plain'))
     setSitelenText(translate(EnglishText, 'Mean_EN', 'SP'))
@@ -54,15 +54,13 @@ function App() {
     setJapanText(translate(EnglishText, 'Mean_EN', 'Japanese'))
   }
 
-  const onChangeAnyText = (text, changedLang) => {}
-
   return (
     <div className="App">
-      <Grid container justify="center" spacing={20}>
-        <Grid item xs={12}>
+      <Grid container justify="center" spacing={20} display="inline-block">
+        <Grid item xs={10}>
           <h1>toki pona multi converter</h1>
         </Grid>
-        <Grid item xs={12}>
+        <Grid item xs={10}>
           <Paper>
             <Grid container justify="center" spacing={40} direction="column">
               <Grid item>
@@ -94,9 +92,11 @@ function App() {
                 <English value={EnglishText} onChange={onChangeEnglishText} />
               </Grid>
             </Grid>
+            <Grid item xs={0}>
+              <a href="https://ilapaj.com/">jan Japali</a>
+            </Grid>
           </Paper>
         </Grid>
-        <a href="https://ilapaj.com/">jan Japali</a>
       </Grid>
     </div>
   )

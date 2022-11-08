@@ -1,8 +1,8 @@
-import React, { useState, useEffect } from 'react'
+import React from 'react'
 import { TextField } from '@material-ui/core'
 
 export const Plain = ({ onChange, value, shift }) => {
-  const changeValue = (e) => {
+  const changeValue = e => {
     const value = e.target.value
     onChange(value)
   }
@@ -20,7 +20,7 @@ export const Plain = ({ onChange, value, shift }) => {
 }
 
 export const SitelenPona = ({ onChange, value, shift }) => {
-  const changeValue = (e) => {
+  const changeValue = e => {
     const value = e.target.value
     onChange(value)
   }
@@ -39,7 +39,7 @@ export const SitelenPona = ({ onChange, value, shift }) => {
 }
 
 export const Emoji = ({ onChange, value, shift }) => {
-  const changeValue = (e) => {
+  const changeValue = e => {
     const value = e.target.value
     onChange(value)
   }
@@ -57,7 +57,7 @@ export const Emoji = ({ onChange, value, shift }) => {
 }
 
 export const Japanese = ({ onChange, value, shift }) => {
-  const changeValue = (e) => {
+  const changeValue = e => {
     const value = e.target.value
     onChange(value)
   }
@@ -75,7 +75,7 @@ export const Japanese = ({ onChange, value, shift }) => {
 }
 
 export const English = ({ onChange, value, shift }) => {
-  const changeValue = (e) => {
+  const changeValue = e => {
     const value = e.target.value
     onChange(value)
   }
@@ -93,7 +93,7 @@ export const English = ({ onChange, value, shift }) => {
 }
 
 export const A = ({ onChange, value, shift }) => {
-  const changeValue = (e) => {
+  const changeValue = e => {
     const value = e.target.value
     onChange(value)
   }
