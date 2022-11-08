@@ -10,9 +10,6 @@ export const translate = (text, from, to, strictCheck = false) => {
   if (!textSplited) {
     return ''
   }
-
-  console.log(textSplited)
-
   if (['Plain', 'Mean_JA', 'Mean_EN'].includes(to)) {
     return textSplited
       .map((word) => {
