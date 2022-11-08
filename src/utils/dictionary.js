@@ -1026,7 +1026,7 @@ export const dictionary = {
   Mean_EN: {
     a: 'ah',
     akesi: 'reptile',
-    ala: 'all',
+    ala: 'no',
     alasa: 'gather',
     ale: 'all',
     ali: 'all',
