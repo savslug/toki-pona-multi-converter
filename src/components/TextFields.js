@@ -11,7 +11,7 @@ export const Plain = ({ onChange, value, shift }) => {
     <TextField
       multiline
       style={{ width: '80%' }}
-      rows={3}
+      rows={5}
       value={value}
       onChange={changeValue}
       placeholder={'o sitelen lon ni!'}
@@ -29,7 +29,7 @@ export const SitelenPona = ({ onChange, value, shift }) => {
     <TextField
       multiline
       style={{ width: '80%' }}
-      rows={3}
+      rows={5}
       value={value}
       onChange={changeValue}
       placeholder={''}
@@ -48,7 +48,7 @@ export const Emoji = ({ onChange, value, shift }) => {
     <TextField
       multiline
       style={{ width: '80%' }}
-      rows={3}
+      rows={5}
       value={value}
       onChange={changeValue}
       placeholder={'👋⛲️🙇🙌'}
@@ -66,7 +66,7 @@ export const Japanese = ({ onChange, value, shift }) => {
     <TextField
       multiline
       style={{ width: '80%' }}
-      rows={3}
+      rows={5}
       value={value}
       onChange={changeValue}
       placeholder={'お画在此'}
@@ -84,7 +84,7 @@ export const English = ({ onChange, value, shift }) => {
     <TextField
       multiline
       style={{ width: '80%' }}
-      rows={3}
+      rows={5}
       value={value}
       onChange={changeValue}
       placeholder={'[imperative] draw in/on/at this'}
@@ -102,7 +102,7 @@ export const A = ({ onChange, value, shift }) => {
     <TextField
       multiline
       style={{ width: '80%' }}
-      rows={3}
+      rows={5}
       value={value}
       onChange={changeValue}
       placeholder={'Enter Kanji text'}
